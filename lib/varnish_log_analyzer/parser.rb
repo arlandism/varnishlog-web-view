@@ -8,7 +8,9 @@ module VarnishLogAnalyzer
     end
 
     def filter_by_transaction(transaction_number)
-      classified_transactions.take(4)
+      classified_transactions.select do |transaction|
+        transaction[:transaction_number] == transaction_number
+      end
     end
 
     private
@@ -20,8 +22,11 @@ module VarnishLogAnalyzer
 
     def classify_transaction(transaction)
       tokens = transaction.split
+      transaction_number = tokens[0].to_i
       tag = tokens[1]
+      transaction_number
       {
+        :transaction_number => transaction_number,
         :tag => tag,
         :description => find_description(tag)
       }
