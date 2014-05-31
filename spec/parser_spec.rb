@@ -14,4 +14,10 @@ describe VarnishLogAnalyzer::Parser do
     expect(transaction_zero[0][:transaction_number]).to eq(0)
   end
 
+  it "shows all transactions" do
+    transactions = parser.all_transactions
+    expect(transactions.count).to eq(34)
+    expect(transactions.map(:transaction_number)).to_set.to eq(Set.new(0, 13, 14, 11))
+  end
+
 end

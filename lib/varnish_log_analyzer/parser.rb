@@ -13,6 +13,10 @@ module VarnishLogAnalyzer
       end
     end
 
+    def all_transactions
+      []
+    end
+
     private
 
     def classified_transactions
