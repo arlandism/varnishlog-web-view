@@ -2,137 +2,33 @@
     0 CLI          - Wr 200 19 PONG 1401553966 1.0
     0 CLI          - Rd ping
     0 CLI          - Wr 200 19 PONG 1401553969 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401553972 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401553975 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401553978 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401553981 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401553984 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401553987 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401553990 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401553993 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401553996 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401553999 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554002 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554005 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554008 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554011 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554014 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554017 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554020 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554023 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554026 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554029 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554032 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554035 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554038 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554041 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554044 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554047 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554050 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554053 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554056 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554059 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554062 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554065 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554068 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554072 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554075 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554078 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554081 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554084 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554087 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554090 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554093 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554096 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554099 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554102 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554105 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554108 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554111 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554114 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554117 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554120 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554123 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554126 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554129 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554132 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554135 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554138 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554141 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554144 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554147 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554150 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554153 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554156 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554159 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554162 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554165 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554168 1.0
-    0 CLI          - Rd ping
-    0 CLI          - Wr 200 19 PONG 1401554171 1.0
+   13 BackendXID   b 922023940
+   13 TxRequest    b GET
+   13 TxURL        b /foo
+   13 TxProtocol   b HTTP/1.1
+   13 TxHeader     b Accept-Encoding: gzip
+   13 RxProtocol   b HTTP/1.1
+   13 RxStatus     b 200
+   13 RxResponse   b OK
+   13 Fetch_Body   b 3(chunked) cls 0 mklen 1
+   13 Length       b 1247
+   13 BackendReuse b viuat
+   14 SessionOpen  c 10.60.115.244 51687 :80
+   14 ReqStart     c 10.60.115.244 51687 922023940
+   14 RxRequest    c GET
+   14 RxProtocol   c HTTP/1.1
+   14 RxHeader     c User-Agent: curl/7.30.0
+   14 VCL_call     c recv lookup
+   14 VCL_call     c hash
+   14 Hash         c /foo
+   14 VCL_call     c deliver deliver
+   14 TxProtocol   c HTTP/1.1
+   14 TxStatus     c 200
+   14 TxResponse   c OK
+   14 TxHeader     c Server: Apache-Coyote/1.1
+   14 Length       c 1247
+   14 ReqEnd       c 922023940 1401222548.209923983 1401222548.284476042 0.000123024 0.074506044 0.000046015
+   14 Debug        c herding
+   14 SessionClose c no request
+   14 StatSess     c 10.60.115.244 51687 0 1 1 0 0 1 461 1247
+   11 Debug        c herding
