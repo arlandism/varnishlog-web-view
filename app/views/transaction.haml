@@ -1,0 +1,9 @@
+!!!5
+%html
+  %head
+    %title= "Transaction"
+    %link{ :rel => "stylesheet", :type => "text/css", :href => "css/bootstrap.min.css"}
+  %body
+    %h1= "Transaction Number #{@transaction_number}"
+    - @transaction_entries.each do |entry|
+      %p="#{entry[:tag]} - #{entry[:description]}"

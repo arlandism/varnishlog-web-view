@@ -13,8 +13,9 @@ end
 
 get '/:transaction_number' do
   File.open("spec/fixtures/sample_log.txt") do |log_file|
-      @transaction = VarnishLogAnalyzer::Parser.new(log_file.read)
-        .filter_by_transaction(params[:transaction_number].to_i)
+      @transaction_number = params[:transaction_number].to_i
+      @transaction_entries = VarnishLogAnalyzer::Parser.new(log_file.read)
+        .filter_by_transaction(@transaction_number)
       haml :transaction
   end
 end
