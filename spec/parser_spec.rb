@@ -23,4 +23,12 @@ describe VarnishLogAnalyzer::Parser do
     expect(transaction_numbers.to_set).to eq(Set.new([0, 13, 14, 11]))
   end
 
+  context "VCLCall" do
+    it "attaches the function that was called" do
+      transaction = parser.filter_by_transaction(14)
+      vcl_call_transaction = transaction[5]
+      expect(vcl_call_transaction[:description]).to eq("VCL method called: recv lookup")
+    end
+  end
+
 end
