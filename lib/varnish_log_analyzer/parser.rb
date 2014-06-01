@@ -13,15 +13,14 @@ module VarnishLogAnalyzer
       end
     end
 
-    def all_transactions
-      []
+    def classified_transactions
+      @classified_transactions ||= raw_transactions.map { |trans| classify_transaction(trans)}
     end
 
     private
 
-    def classified_transactions
-      transactions = @log.split("\n")
-      @classified_transactions ||= transactions.map { |trans| classify_transaction(trans)}
+    def raw_transactions
+      @raw_transactions ||= @log.split("\n")
     end
 
     def classify_transaction(transaction)
