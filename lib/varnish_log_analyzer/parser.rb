@@ -27,7 +27,6 @@ module VarnishLogAnalyzer
       tokens = transaction.split
       transaction_number = tokens[0].to_i
       tag = tokens[1]
-      transaction_number
       {
         :transaction_number => transaction_number,
         :tag => tag,
