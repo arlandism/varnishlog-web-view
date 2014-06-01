@@ -1,1 +1,17 @@
-"Hello World!"
+!!!5
+%html
+  %head
+    %title= "Log Entries"
+    %link{ :rel => "stylesheet", :type => "text/css", :href => "css/bootstrap.min.css"}
+  %body
+    %table.table
+      %thead
+        %tr
+          %th Transaction Number
+          %th Tag
+          %th Description
+      - @transactions.each do |transaction|
+        %tr
+          %td= transaction[:transaction_number]
+          %td= transaction[:tag]
+          %td= transaction[:description]
