@@ -3,7 +3,15 @@
   %head
     %title= "Transaction"
     %link{ :rel => "stylesheet", :type => "text/css", :href => "css/bootstrap.min.css"}
+    %link{ :rel => "javascript", :type => "text/javascript", :href => "//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"}
+    = javascript_include_tag "javascript/tag_descriptions.js"
+    %link{ :rel => "javascript", :type => "text/javascript", :href => "javascript/notify.min.js"}
+    /%link{ :rel => "javascript", :type => "text/javascript", :href => "javascript/tag_descriptions.js"}
   %body
     %h1= "Transaction Number #{@transaction_number}"
     - @transaction_entries.each do |entry|
-      %p="#{entry[:tag]} - #{entry[:description]}"
+      %p="#{entry[:tag]} - #{entry[:details]}"
+  :javascript
+    $( document ).ready(function(){
+      alert("Hello!");
+    })

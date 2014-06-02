@@ -11,6 +11,7 @@ describe VarnishLogAnalyzer::Parser do
     expect(transaction_zero.count).to eq(4)
     expect(transaction_zero[0][:tag]).to eq("CLI")
     expect(transaction_zero[0][:description]).to eq("Communication between varnishd master and child process")
+    expect(transaction_zero[0][:details]).to eq("Rd ping")
     expect(transaction_zero[0][:transaction_number]).to eq(0)
   end
 
@@ -21,14 +22,6 @@ describe VarnishLogAnalyzer::Parser do
       transaction[:transaction_number]
     end
     expect(transaction_numbers.to_set).to eq(Set.new([0, 13, 14, 11]))
-  end
-
-  context "VCLCall" do
-    it "attaches the function that was called" do
-      transaction = parser.filter_by_transaction(14)
-      vcl_call_transaction = transaction[5]
-      expect(vcl_call_transaction[:description]).to eq("VCL method called: recv lookup")
-    end
   end
 
 end
