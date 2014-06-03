@@ -14,7 +14,7 @@ module VarnishLogAnalyzer
     end
 
     def self.config_file
-      @@config_file ||= YAML.load_file("tag_descriptions.yml")
+      @@config_file ||= YAML.load_file("config/tag_descriptions.yml")
     end
   end
 end
