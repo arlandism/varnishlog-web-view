@@ -3,8 +3,8 @@
   %head
     %title= "Log Entries"
     %link{ :rel => "stylesheet", :type => "text/css", :href => "css/bootstrap.min.css"}
-    %link{ :rel => "javascript", :type => "text/javascript", :href => "javascript/jquery.min.js"}
-    %link{ :rel => "javascript", :type => "text/javascript", :href => "javascript/notify.min.js"}
+    %script{:type => "text/javascript", :src => "javascript/jquery.min.js"}
+    %script{:type => "text/javascript", :src => "javascript/notify.min.js"}
   %body
     %table.table
       %thead
@@ -17,3 +17,7 @@
           %td= transaction[:transaction_number]
           %td= transaction[:tag]
           %td= transaction[:details]
+  :javascript
+    $(document).ready( function(){
+      alert("foo");
+    });
