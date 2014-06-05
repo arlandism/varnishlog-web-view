@@ -1,7 +1,9 @@
 $LOAD_PATH << "./lib" << "app"
 
 require 'haml'
+require 'multi_json'
 require 'sinatra'
+require 'varnish_log_analyzer/tag_description'
 require 'varnish_log_analyzer/parser'
 
 get '/' do
@@ -18,4 +20,8 @@ get '/:transaction_number' do
         .filter_by_transaction(@transaction_number)
       haml :transaction
   end
+end
+
+get '/tag/:tag_name' do
+  MultiJson.encode("#{VarnishLogAnalyzer::TagDescription.for(params[:tag_name])}")
 end

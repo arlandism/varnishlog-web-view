@@ -46,6 +46,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  multi_json
   pry
   resque
   rspec

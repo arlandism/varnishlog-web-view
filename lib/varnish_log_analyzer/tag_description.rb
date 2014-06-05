@@ -2,11 +2,16 @@ require 'yaml'
 
 module VarnishLogAnalyzer
   class TagDescription
+    UNAVAILABLE_MESSAGE = "No description available"
     def self.for(tag)
       first_match = config_file["tags"].select do |tag_info|
         info_for_tag?(tag_info, tag)
       end.first
-      first_match["description"] if first_match
+      if first_match
+        first_match["description"]
+      else
+        UNAVAILABLE_MESSAGE
+      end
     end
 
     def self.info_for_tag?(tag_info, tag)
