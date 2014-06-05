@@ -17,6 +17,6 @@
       - @transactions.each do |transaction|
         %tr
           %td= transaction[:transaction_number]
-          %td= transaction[:tag]
+          %td{:class => "tag"}= transaction[:tag]
           %td= transaction[:collaborator]
           %td= transaction[:details]

@@ -1,5 +1,7 @@
 $(document).ready( function(){
-  $( ".table" ).mouseover( function() {
-    $.notify("You're touching the table!", "info");
+  $( ".tag" ).mouseover( function() {
+      $.get( "/tag/" + this.innerText, function( response ) {
+        $.notify(response, "info");
+      });
   });
 });
