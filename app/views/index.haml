@@ -12,9 +12,11 @@
         %tr
           %th Transaction Number
           %th Tag
+          %th Collaborator
           %th Description
       - @transactions.each do |transaction|
         %tr
           %td= transaction[:transaction_number]
           %td= transaction[:tag]
+          %td= transaction[:collaborator]
           %td= transaction[:details]

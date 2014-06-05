@@ -27,9 +27,11 @@ module VarnishLogAnalyzer
       tokens = transaction.split
       transaction_number = tokens[0].to_i
       tag = tokens[1]
+      collaborator = tokens[2]
       additional_info = tokens[3..-1].join(" ")
       {
         :transaction_number => transaction_number,
+        :collaborator => collaborator,
         :tag => tag,
         :description => find_description(tag),
         :details => additional_info

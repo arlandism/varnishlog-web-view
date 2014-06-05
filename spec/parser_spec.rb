@@ -13,6 +13,7 @@ describe VarnishLogAnalyzer::Parser do
     expect(transaction_zero[0][:description]).to eq("Communication between varnishd master and child process")
     expect(transaction_zero[0][:details]).to eq("Rd ping")
     expect(transaction_zero[0][:transaction_number]).to eq(0)
+    expect(transaction_zero[0][:collaborator]).to eq("-")
   end
 
   it "shows all transactions" do
