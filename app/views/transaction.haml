@@ -11,7 +11,3 @@
     %h1= "Transaction Number #{@transaction_number}"
     - @transaction_entries.each do |entry|
       %p="#{entry[:tag]} - #{entry[:details]}"
-  :javascript
-    $( document ).ready(function(){
-      alert("Hello!");
-    })
