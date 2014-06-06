@@ -4,6 +4,7 @@ gem 'resque'
 gem 'sinatra'
 gem 'haml'
 gem 'multi_json'
+gem 'rack-test'
 
 group :test do
   gem 'rspec'
