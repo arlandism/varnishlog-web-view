@@ -3,8 +3,28 @@ require "varnish_log_analyzer/parser"
 
 describe VarnishLogAnalyzer::Parser do
 
-  let(:log_contents) { File.new("spec/fixtures/sample_log.txt").read }
-  let(:parser) { VarnishLogAnalyzer::Parser.new(log_contents) }
+  class MockLog
+
+    attr_reader :read_from
+
+    def initialize(contents)
+      @contents = contents
+    end
+
+    def read
+      @read_from = true
+      @contents || "13 TxRequest b GET"
+    end
+
+  end
+
+  let(:log) { MockLog.new(File.new("spec/fixtures/sample_log.txt").read) }
+  let(:parser) { VarnishLogAnalyzer::Parser.new(log) }
+
+  it "reads from the log" do
+    parser.classified_transactions
+    expect(log.read_from).to eq true
+  end
 
   it "filters by transaction" do
     transaction_zero = parser.filter_by_transaction(0)

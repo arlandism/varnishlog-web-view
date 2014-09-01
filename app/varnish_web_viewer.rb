@@ -2,6 +2,7 @@ $LOAD_PATH << "./lib" << "app"
 
 require 'haml'
 require 'multi_json'
+require 'optparse'
 require 'sinatra/base'
 require 'varnish_log_analyzer/tag_description'
 require 'varnish_log_analyzer/parser'

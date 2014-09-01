@@ -3,8 +3,8 @@ require 'varnish_log_analyzer/tag_description'
 module VarnishLogAnalyzer
   class Parser
 
-    def initialize(log_contents)
-      @log = log_contents
+    def initialize(log)
+      @log = log
     end
 
     def filter_by_transaction(transaction_number)
@@ -20,7 +20,7 @@ module VarnishLogAnalyzer
     private
 
     def raw_transactions
-      @raw_transactions ||= @log.split("\n")
+      @raw_transactions ||= @log.read.split("\n")
     end
 
     def classify_transaction(transaction)
